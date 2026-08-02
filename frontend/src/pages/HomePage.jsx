@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 import { getProjects } from '../services/api';
 import { motion } from 'framer-motion';
-import { Sparkles, Code, Server, Database } from 'lucide-react';
+import { Layout, ShoppingBag, Search } from 'lucide-react';
 
 const HomePage = () => {
   const [projects, setProjects] = useState([]);
@@ -28,15 +28,15 @@ const HomePage = () => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Mes Travaux / Projects Section */}
+      {/* Mes Réalisations / Projects Section */}
       <section id="projets" style={{ padding: '4rem 0 6rem 0' }}>
         <div className="container">
           <div className="section-header">
             <span className="subtitle">Portfolio</span>
-            <h2>Mes Travaux & Projets</h2>
+            <h2>Mes Réalisations & Sites Web</h2>
             <p>
-              Une sélection de mes réalisations récentes. Chaque projet reflète mes exigences 
-              en matière d'architecture logicielle, de design et de performance.
+              Découvrez une sélection de sites web modernes et responsive créés pour mes clients. 
+              Chaque projet est conçu avec soin pour offrir un design attrayant et une navigation fluide.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Tech Stack Banner Highlights */}
+      {/* Web Services Highlights Banner */}
       <section
         style={{
           borderTop: '1px solid var(--border-color)',
@@ -97,26 +97,26 @@ const HomePage = () => {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-              <Code size={28} style={{ color: 'var(--accent-primary)' }} />
+              <Layout size={28} style={{ color: 'var(--accent-primary)' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Frontend Modern</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>React, Vite, Framer Motion</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Sites Vitrines</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Design Responsive & Sur-mesure</p>
               </div>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-              <Server size={28} style={{ color: 'var(--accent-secondary)' }} />
+              <ShoppingBag size={28} style={{ color: 'var(--accent-secondary)' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Backend Robuste</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Node.js, Express REST API</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Sites E-Commerce</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Catalogues & Ventes en ligne</p>
               </div>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-              <Database size={28} style={{ color: '#10b981' }} />
+              <Search size={28} style={{ color: '#10b981' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Base de Données</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>PostgreSQL & Prisma ORM</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Optimisation SEO</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Référencement & Vitesse Web</p>
               </div>
             </div>
           </div>

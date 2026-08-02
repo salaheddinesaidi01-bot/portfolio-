@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Terminal } from 'lucide-react';
+import { ArrowRight, Sparkles, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -89,7 +89,7 @@ const Hero = () => {
                 boxShadow: '0 0 10px #10b981'
               }}
             />
-            Disponible pour de nouveaux projets
+            Disponible pour la création de vos sites web
           </motion.div>
 
           <h1
@@ -106,7 +106,7 @@ const Hero = () => {
 
           <h2
             style={{
-              fontSize: '1.3rem',
+              fontSize: '1.35rem',
               color: 'var(--accent-secondary)',
               fontWeight: 600,
               marginBottom: '1.5rem',
@@ -115,7 +115,7 @@ const Hero = () => {
               gap: '0.5rem'
             }}
           >
-            <Terminal size={22} /> Développeur Full Stack (React / Node.js / PostgreSQL)
+            <Globe size={22} /> Développeur Web (Creation & Integration de Sites Web)
           </h2>
 
           <p
@@ -127,9 +127,9 @@ const Hero = () => {
               lineHeight: 1.7
             }}
           >
-            J'aide les entreprises et startups à concevoir et déployer des applications web 
-            haute performance, ultra réactives, animées et évolutives. Spécialisé dans les architectures 
-            JavaScript modernes et la modélisation de bases de données réactives.
+            Spécialiste de la création de sites web modernes, responsive et sur-mesure. 
+            J'accompagne mes clients dans la conception de leurs sites vitrines, e-commerce et landing pages 
+            à fort impact visuel et parfaitement optimisés.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
@@ -144,7 +144,7 @@ const Hero = () => {
                 document.getElementById('projets')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <Sparkles size={18} /> Voir mes travaux
+              <Sparkles size={18} /> Voir mes réalisations
             </a>
           </div>
         </motion.div>
@@ -204,7 +204,7 @@ const Hero = () => {
               />
             </div>
 
-            {/* Experience Floating Badge */}
+            {/* Experience Floating Badge: 2 Ans */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
@@ -221,10 +221,10 @@ const Hero = () => {
               }}
             >
               <span style={{ fontSize: '1.8rem', fontWeight: 800 }} className="text-gradient">
-                5+
+                2
               </span>
               <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', lineHeight: 1.2 }}>
-                Ans d'expérience <br /> Full Stack
+                Ans d'expérience <br /> Développeur Web
               </span>
             </motion.div>
           </div>

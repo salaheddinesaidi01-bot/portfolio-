@@ -10,34 +10,33 @@ const api = axios.create({
   timeout: 8000,
 });
 
-// Fallback project data in case API server is starting up or disconnected
 const fallbackProjects = [
   {
     id: 1,
-    titre: "Plateforme E-Commerce Next.js & Stripe",
-    description: "Boutique en ligne haute performance avec gestion de panier en temps réel, paiements sécurisés Stripe, dashboard d'administration et filtres avancés.",
+    titre: "Site E-Commerce Boutique & Mode",
+    description: "Boutique en ligne moderne et 100% responsive avec catalogue produits, gestion du panier, paiement sécurisé et optimisation des temps de chargement sur mobile.",
     image_url: "/assets/project_ecommerce.png",
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "Stripe API", "TailwindCSS"],
-    lien_projet: "https://github.com",
-    lien_code: "https://github.com"
+    technologies: ["HTML5/CSS3", "JavaScript", "PHP", "WordPress / WooCommerce", "Design Responsive"],
+    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   },
   {
     id: 2,
-    titre: "Taskify - Gestionnaire de Tâches Collaboratif",
-    description: "Application SaaS de gestion de projets en équipe style Kanban avec WebSockets pour les mises à jour en direct, notifications push et attribution de tâches.",
+    titre: "Site Vitrine Agence Digital & Business",
+    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration Google Maps.",
     image_url: "/assets/project_taskmanager.png",
-    technologies: ["React", "TypeScript", "Express", "Socket.io", "PostgreSQL", "Framer Motion"],
-    lien_projet: "https://github.com",
-    lien_code: "https://github.com"
+    technologies: ["HTML5", "CSS3 / SASS", "JavaScript Modern", "Optimisation SEO", "UI/UX"],
+    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   },
   {
     id: 3,
-    titre: "PulseAI - Dashboard d'Analytics SaaS",
-    description: "Plateforme d'analyse de données et métriques prédictives alimentée par l'IA. Tableaux de bord interactifs avec Recharts, filtres avancés et export PDF/CSV.",
+    titre: "Landing Page High-Tech & Services",
+    description: "Landing page événementielle et promotionnelle à fort taux de conversion avec effets visuels en parallax, badges interactifs et formulaire de contact rapide.",
     image_url: "/assets/project_ai_analytics.png",
-    technologies: ["React", "Python/FastAPI", "PostgreSQL", "Recharts", "Prisma", "Docker"],
-    lien_projet: "https://github.com",
-    lien_code: "https://github.com"
+    technologies: ["HTML5", "TailwindCSS", "JavaScript", "PHP Form Handler", "Responsive"],
+    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   }
 ];
 

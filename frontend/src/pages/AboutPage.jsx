@@ -3,43 +3,37 @@ import SkillBar from '../components/SkillBar';
 import Timeline from '../components/Timeline';
 import { getAboutInfo } from '../services/api';
 import { motion } from 'framer-motion';
-import { User, Award, BookOpen, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
-const fallbackSkills = [
-  { name: "React / Next.js", level: 95, icon: "Code2" },
-  { name: "JavaScript / TypeScript", level: 90, icon: "FileCode" },
-  { name: "CSS3 / Tailwind / Framer Motion", level: 88, icon: "Palette" },
-  { name: "Node.js / Express", level: 92, icon: "Server" },
-  { name: "PostgreSQL / Prisma", level: 85, icon: "Database" },
-  { name: "REST API & WebSockets", level: 88, icon: "Cpu" },
-  { name: "Docker / DevOps", level: 80, icon: "Box" },
-  { name: "Git / CI-CD", level: 95, icon: "GitBranch" }
+const webDeveloperSkills = [
+  { name: "HTML5 / CSS3 / SASS", level: 95, icon: "Code2" },
+  { name: "JavaScript Modern (ES6+)", level: 90, icon: "FileCode" },
+  { name: "Responsive Web Design & Animations", level: 92, icon: "Palette" },
+  { name: "Integration UI/UX & Tailwind", level: 88, icon: "Palette" },
+  { name: "PHP & WordPress Development", level: 85, icon: "Server" },
+  { name: "Optimisation SEO & Performances Web", level: 90, icon: "Cpu" },
+  { name: "Git & Versioning", level: 90, icon: "GitBranch" },
+  { name: "E-Commerce & Sites Vitrines", level: 95, icon: "Box" }
 ];
 
-const fallbackTimeline = [
+const webDeveloperTimeline = [
   {
     year: "2024 - Présent",
-    title: "Senior Full Stack Engineer",
-    company: "TechNova Studio",
-    description: "Conception et architecture de microservices Node.js/Express, création d'interfaces React haut de gamme et optimisation des requêtes PostgreSQL pour des milliers d'utilisateurs quotidiens."
+    title: "Développeur Web Freelance & Studio",
+    company: "Création de Sites Web Sur-Mesure",
+    description: "Conception et développement de sites vitrines modernes, boutiques e-commerce performantes et landing pages optimisées pour la conversion et le référencement naturel (SEO)."
   },
   {
     year: "2022 - 2024",
-    title: "Développeur Web React & Node.js",
-    company: "Digital Spark Agency",
-    description: "Développement d'applications web sur mesure, intégrations d'API REST et d'ORM (Prisma/Sequelize), encadrement de développeurs juniors et mise en place de tests automatisés."
+    title: "Développeur Web & Intégrateur",
+    company: "Digital Web Agency",
+    description: "Intégration responsive de maquettes web, création d'interfaces dynamiques, développement de thèmes personnalisés et maintenance de sites web."
   },
   {
     year: "2020 - 2022",
-    title: "Développeur Frontend Junior",
-    company: "InnoWeb",
-    description: "Intégration de maquettes Figma en React responsive, création d'animations fluides et optimisation des performances Web Vitals."
-  },
-  {
-    year: "2017 - 2020",
-    title: "Master en Informatique & Génie Logiciel",
-    company: "Université de Technologie",
-    description: "Spécialisation en architectures logicielles, bases de données relationnelles et développement web."
+    title: "Formation en Développement Web & Informatique",
+    company: "Institut de Technologie Web",
+    description: "Acquisition des compétences fondamentales en intégration web, programmation client/serveur et gestion de projets web."
   }
 ];
 
@@ -56,8 +50,8 @@ const AboutPage = () => {
     loadAbout();
   }, []);
 
-  const skills = aboutData?.skills || fallbackSkills;
-  const timelineEvents = aboutData?.timeline || fallbackTimeline;
+  const skills = webDeveloperSkills;
+  const timelineEvents = webDeveloperTimeline;
 
   return (
     <div style={{ paddingTop: '7.5rem', paddingBottom: '6rem' }}>
@@ -71,7 +65,7 @@ const AboutPage = () => {
         >
           <span className="subtitle">Présentation</span>
           <h2>À Propos de Moi</h2>
-          <p>Découvrez mon parcours professionnel, mes compétences techniques et ma passion pour le web.</p>
+          <p>Découvrez mon parcours de Développeur Web, mes compétences et mon expertise dans la création de sites web.</p>
         </motion.div>
 
         {/* Detailed Presentation Section */}
@@ -92,34 +86,31 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h3 style={{ fontSize: '1.8rem', marginBottom: '1.2rem', fontWeight: 700 }}>
-              Créer des produits digitaux exceptionnels
+              Des sites web sur-mesure, élégants et performants
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.2rem' }}>
-              Passionné par les technologies du Web depuis plus de 5 ans, je conçois des applications 
-              modernes en associant la puissance de <strong>React</strong> côté front-end et la robustesse de <strong>Node.js / Express / PostgreSQL</strong> côté back-end.
+              Avec <strong>2 ans d'expérience</strong> dans le développement web, je crée des <strong>sites web professionnels</strong> (sites vitrines, e-commerce, portfolios, landing pages) conçus pour captiver vos visiteurs et booster votre présence en ligne.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.8rem' }}>
-              Mon approche est orientée vers la performance, l'accessibilité et la qualité du code. 
-              J'accorde une importance primordiale à l'expérience utilisateur et aux détails visuels grâce 
-              à des animations fluides et des architectures propres.
+              Je privilégie une approche moderne axée sur le design responsive, la rapidité de chargement et l'optimisation SEO afin d'offrir une expérience utilisateur irréprochable sur tous les écrans (mobile, tablette, ordinateur).
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Code Propre & Testé</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Design Responsive 100%</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>UX/UI Responsive</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Sites Vitrines & E-Commerce</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>API REST & GraphQL</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Optimisation SEO & Vitesse</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>DB PostgreSQL / ORM</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Intégration UI/UX Soignée</span>
               </div>
             </div>
           </motion.div>
@@ -134,27 +125,27 @@ const AboutPage = () => {
             style={{ padding: '2.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}
           >
             <div style={{ textAlign: 'center' }}>
-              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>5+</span>
+              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>2</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Années d'Expérience
-              </p>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>30+</span>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Projets Réalisés
-              </p>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>100%</span>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Satisfaction Client
+                Ans d'Expérience
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>15+</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Technologies Maîtrisées
+                Sites Web Créés
+              </p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>100%</span>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
+                Sites Responsive & Fluid
+              </p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>10+</span>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
+                Projets Clients Livrés
               </p>
             </div>
           </motion.div>
@@ -164,7 +155,7 @@ const AboutPage = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="section-header" style={{ marginBottom: '2.5rem' }}>
             <span className="subtitle">Compétences</span>
-            <h2>Stack Technique</h2>
+            <h2>Compétences Web</h2>
           </div>
 
           <div
@@ -178,7 +169,7 @@ const AboutPage = () => {
           >
             <div>
               <h4 style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--accent-primary)', fontWeight: 700 }}>
-                Frontend & UI
+                Intégration & Design Front-End
               </h4>
               {skills.slice(0, 4).map((skill, idx) => (
                 <SkillBar key={idx} skill={skill} index={idx} />
@@ -187,7 +178,7 @@ const AboutPage = () => {
 
             <div>
               <h4 style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--accent-secondary)', fontWeight: 700 }}>
-                Backend, DB & DevOps
+                CMS, SEO & Développement Web
               </h4>
               {skills.slice(4).map((skill, idx) => (
                 <SkillBar key={idx} skill={skill} index={idx + 4} />
@@ -200,7 +191,7 @@ const AboutPage = () => {
         <section>
           <div className="section-header" style={{ marginBottom: '2.5rem' }}>
             <span className="subtitle">Parcours</span>
-            <h2>Expériences & Formations</h2>
+            <h2>Parcours Professionnel</h2>
           </div>
 
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
