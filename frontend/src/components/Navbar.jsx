@@ -22,9 +22,10 @@ const Navbar = () => {
         left: 0,
         right: 0,
         zIndex: 1000,
-        padding: scrolled ? '0.8rem 0' : '1.4rem 0',
+        padding: scrolled ? '0.8rem 0' : '1.2rem 0',
         backgroundColor: scrolled ? 'var(--bg-glass)' : 'transparent',
         backdropFilter: scrolled ? 'blur(16px)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(16px)' : 'none',
         borderBottom: scrolled ? '1px solid var(--border-color)' : '1px solid transparent',
         transition: 'all var(--transition-smooth)'
       }}
@@ -52,8 +53,8 @@ const Navbar = () => {
           </span>
         </NavLink>
 
-        {/* Action button (Theme Toggle) without the right menu bar */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        {/* Clean Header Right Action (Theme Switcher Only - No Menu Links) */}
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <ThemeToggle />
         </div>
       </div>
