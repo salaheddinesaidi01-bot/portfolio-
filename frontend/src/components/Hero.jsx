@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Sparkles, Terminal } from 'lucide-react';
+import { ArrowRight, Sparkles, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
         overflow: 'hidden'
       }}
     >
-      {/* Background ambient glowing light circles */}
+      {/* Ambient Glowing Backdrops */}
       <div
         style={{
           position: 'absolute',
@@ -56,13 +56,12 @@ const Hero = () => {
           alignItems: 'center'
         }}
       >
-        {/* Left Column - Text Content with Fade-In / Slide-In Animation */}
+        {/* Left Column - Intro Text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Status Badge */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -95,19 +94,19 @@ const Hero = () => {
 
           <h1
             style={{
-              fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
+              fontSize: 'clamp(2.3rem, 4.5vw, 3.6rem)',
               lineHeight: 1.15,
               marginBottom: '1.2rem',
               fontWeight: 800
             }}
           >
             Bonjour, je suis <br />
-            <span className="text-gradient">Alexandre Dupont</span>
+            <span className="text-gradient">SAIDI SALAH EDDINE</span>
           </h1>
 
           <h2
             style={{
-              fontSize: '1.35rem',
+              fontSize: '1.3rem',
               color: 'var(--accent-secondary)',
               fontWeight: 600,
               marginBottom: '1.5rem',
@@ -150,7 +149,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Right Column - Circular Profile Photo with Animated Glow & Floating Elements */}
+        {/* Right Column - User Profile Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -168,7 +167,7 @@ const Hero = () => {
               height: '320px'
             }}
           >
-            {/* Animated Gradient Outer Ring */}
+            {/* Animated Outer Ring */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
@@ -182,7 +181,7 @@ const Hero = () => {
               }}
             />
 
-            {/* Avatar Image Container */}
+            {/* Photo Circular Frame */}
             <div
               style={{
                 width: '100%',
@@ -196,7 +195,7 @@ const Hero = () => {
             >
               <img
                 src="/assets/avatar.png"
-                alt="Alexandre Dupont Photo de Profil"
+                alt="SAIDI SALAH EDDINE Photo de Profil"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -205,7 +204,7 @@ const Hero = () => {
               />
             </div>
 
-            {/* Floating Experience Badge */}
+            {/* Experience Floating Badge */}
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}

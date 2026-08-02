@@ -24,9 +24,9 @@ const Footer = () => {
       >
         <div style={{ display: 'flex', gap: '1.2rem' }}>
           {[
-            { icon: Github, href: 'https://github.com', label: 'GitHub' },
+            { icon: Github, href: 'https://github.com/salaheddinesaidi01-bot', label: 'GitHub' },
             { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-            { icon: Mail, href: 'mailto:contact@alexandre.dev', label: 'Email' }
+            { icon: Mail, href: 'mailto:contact@saidisalaheddine.dev', label: 'Email' }
           ].map((social, idx) => (
             <motion.a
               key={idx}
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-          © {new Date().getFullYear()} Alexandre Dupont. Conçu avec{' '}
+          © {new Date().getFullYear()} SAIDI SALAH EDDINE. Conçu avec{' '}
           <Heart size={14} style={{ color: '#ef4444', display: 'inline', verticalAlign: 'middle' }} /> en React & Express.
         </p>
       </div>

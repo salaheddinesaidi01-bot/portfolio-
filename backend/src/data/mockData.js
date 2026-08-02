@@ -6,7 +6,7 @@ export const initialProjects = [
     image_url: "/assets/project_ecommerce.png",
     technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "Stripe API", "TailwindCSS"],
     lien_projet: "https://example-ecommerce.demo",
-    lien_code: "https://github.com/demo/ecommerce-platform",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2026-01-15")
   },
   {
@@ -16,7 +16,7 @@ export const initialProjects = [
     image_url: "/assets/project_taskmanager.png",
     technologies: ["React", "TypeScript", "Express", "Socket.io", "PostgreSQL", "Framer Motion"],
     lien_projet: "https://example-taskify.demo",
-    lien_code: "https://github.com/demo/taskify-app",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2025-11-20")
   },
   {
@@ -26,14 +26,14 @@ export const initialProjects = [
     image_url: "/assets/project_ai_analytics.png",
     technologies: ["React", "Python/FastAPI", "PostgreSQL", "Recharts", "Prisma", "Docker"],
     lien_projet: "https://example-pulseai.demo",
-    lien_code: "https://github.com/demo/pulse-ai-analytics",
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2025-08-10")
   }
 ];
 
 export const initialAboutInfo = {
   id: 1,
-  nom: "Alexandre Dupont",
+  nom: "SAIDI SALAH EDDINE",
   titre: "Développeur Full Stack Senior",
   presentation: "Passionné par la création d'expériences web modernes, fluides et performantes. Avec plus de 5 ans d'expérience dans l'écosystème JavaScript (React, Node.js, Express, PostgreSQL), je transforme des concepts complexes en applications intuitives et robustes.",
   parcours: "Diplômé en Génie Logiciel, j'ai travaillé en startup tech et en agence numérique avant d'accompagner des clients sur des projets d'envergure. Spécialisé dans les architectures Full Stack modernes et les interfaces utilisateur réactives.",
