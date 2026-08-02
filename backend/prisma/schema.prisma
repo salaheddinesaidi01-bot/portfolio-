@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id           Int      @id @default(autoincrement())
+  titre        String
+  description  String   @db.Text
+  image_url    String
+  technologies String[] // Array of strings for tech stack badges
+  lien_projet  String?
+  lien_code    String?
+  date_creation DateTime @default(now())
+
+  @@map("projects")
+}
+
+model Message {
+  id         Int      @id @default(autoincrement())
+  nom        String
+  email      String
+  message    String   @db.Text
+  date_envoi DateTime @default(now())
+
+  @@map("messages")
+}
+
+model AboutInfo {
+  id           Int      @id @default(autoincrement())
+  nom          String
+  titre        String
+  presentation String   @db.Text
+  parcours     String   @db.Text
+  skills       Json     // Technical skills breakdown
+  timeline     Json     // Career & education timeline events
+
+  @@map("about_info")
+}
