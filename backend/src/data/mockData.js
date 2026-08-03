@@ -1,8 +1,8 @@
 export const initialProjects = [
   {
     id: 1,
-    titre: "Plateforme E-Commerce & Boutique de Vêtements",
-    description: "Site e-commerce moderne et responsive pour boutique de vêtements et prêt-à-porter. Interface interactive avec catalogue produits, filtres dynamique, panier d'achat et paiement sécurisé.",
+    titre: "Boutique de Vêtements E-Commerce",
+    description: "Site e-commerce moderne et responsive pour boutique de vêtements et prêt-à-porter. Interface interactive avec catalogue produits, filtres dynamiques, panier d'achat et paiement sécurisé.",
     image_url: "/assets/project_ecommerce.png",
     technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Mode & Vêtements"],
     lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
