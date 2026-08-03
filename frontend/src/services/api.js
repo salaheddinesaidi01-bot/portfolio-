@@ -42,7 +42,7 @@ const fallbackProjects = [
 
 export const getProjects = async () => {
   try {
-    const response = await api.get('/projects');
+    const response = await api.get(`/projects?t=${Date.now()}`);
     return response.data.data || response.data;
   } catch (error) {
     console.warn('API error fetching projects, using fallback data:', error.message);
@@ -65,7 +65,7 @@ export const submitContactMessage = async (formData) => {
 
 export const getAboutInfo = async () => {
   try {
-    const response = await api.get('/about');
+    const response = await api.get(`/about?t=${Date.now()}`);
     return response.data.data;
   } catch (error) {
     console.warn('API error fetching about info:', error.message);
