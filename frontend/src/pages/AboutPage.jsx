@@ -6,28 +6,35 @@ import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 
 const webDeveloperSkills = [
-  { name: "HTML5 / CSS3 / SASS", level: 95, icon: "Code2" },
-  { name: "JavaScript Modern (ES6+)", level: 90, icon: "FileCode" },
-  { name: "Responsive Web Design & Animations", level: 92, icon: "Palette" },
-  { name: "Integration UI/UX & Tailwind", level: 88, icon: "Palette" },
-  { name: "PHP & WordPress Development", level: 85, icon: "Server" },
-  { name: "Optimisation SEO & Performances Web", level: 90, icon: "Cpu" },
-  { name: "Git & Versioning", level: 90, icon: "GitBranch" },
-  { name: "E-Commerce & Sites Vitrines", level: 95, icon: "Box" }
+  { name: "Développement de Sites Web (Vitrines & E-Commerce)", level: 95, icon: "Code2" },
+  { name: "Conception de Tableaux de Bord (Dashboards)", level: 95, icon: "BarChart3" },
+  { name: "Développement SaaS & Applications Web", level: 92, icon: "Layout" },
+  { name: "HTML5 / CSS3 / JavaScript Modern", level: 90, icon: "FileCode" },
+  { name: "React.js & Intégration UI/UX", level: 92, icon: "Palette" },
+  { name: "Data & Business Analysis", level: 92, icon: "LineChart" },
+  { name: "Génie Industriel (Optimisation des flux)", level: 95, icon: "Cpu" },
+  { name: "Gestion de la Logistique & Supply Chain", level: 90, icon: "Box" },
+  { name: "Git & Versioning", level: 90, icon: "GitBranch" }
 ];
 
 const webDeveloperTimeline = [
   {
     year: "Récents",
-    title: "Développeur Web Freelance & Studio",
-    company: "Création de Sites Web Sur-Mesure",
-    description: "Conception et développement de sites vitrines modernes, boutiques e-commerce performantes et landing pages optimisées pour la conversion et le référencement naturel (SEO)."
+    title: "Développeur Web & Concepteur SaaS / Dashboards",
+    company: "Création de Solutions Web Sur-Mesure",
+    description: "Conception et développement de sites e-commerce modernes, d'applications SaaS et de tableaux de bord décisionnels interactifs pour le pilotage d'entreprise."
   },
   {
-    year: "Projets",
-    title: "Développeur Web & Intégrateur",
-    company: "Digital Web Agency",
-    description: "Intégration responsive de maquettes web, création d'interfaces dynamiques, développement de thèmes personnalisés et maintenance de sites web."
+    year: "Expérience",
+    title: "Data & Business Analyst",
+    company: "Analyse de Données & Aide à la Décision",
+    description: "Analyse de données stratégiques, modélisation d'indicateurs clés de performance (KPIs), création de dashboards interactifs et automatisation de rapports."
+  },
+  {
+    year: "Formation & Parcours",
+    title: "Ingénieur en Génie Industriel",
+    company: "Spécialité Optimisation des Flux & Logistique",
+    description: "Modélisation et optimisation de la chaîne logistique, gestion des stocks, cartographie des flux de production et amélioration continue des processus."
   }
 ];
 
@@ -59,7 +66,7 @@ const AboutPage = () => {
         >
           <span className="subtitle">Présentation</span>
           <h2>À Propos de Moi</h2>
-          <p>Découvrez mon parcours de Développeur Web, mes compétences et mon expertise dans la création de sites web.</p>
+          <p>Développeur Web, Data & Business Analyst, et Ingénieur en Génie Industriel spécialisé en optimisation des flux et logistique.</p>
         </motion.div>
 
         {/* Detailed Presentation Section */}
@@ -80,31 +87,31 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h3 style={{ fontSize: '1.8rem', marginBottom: '1.2rem', fontWeight: 700 }}>
-              Des sites web sur-mesure, élégants et performants
+              Développement Web, Dashboards SaaS & Ingenierie Logistique
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.2rem' }}>
-              En tant que <strong>Développeur Web passionné</strong>, je crée des <strong>sites web professionnels</strong> (sites vitrines, e-commerce, portfolios, landing pages) conçus pour captiver vos visiteurs et booster votre présence en ligne.
+              Alliant une double compétence technique en <strong>Génie Industriel & Data Analysis</strong> et en <strong>Développement Web & SaaS</strong>, je conçois des applications web et des tableaux de bord sur-mesure.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.8rem' }}>
-              Je privilégie une approche moderne axée sur le design responsive, la rapidité de chargement et l'optimisation SEO afin d'offrir une expérience utilisateur irréprochable sur tous les écrans (mobile, tablette, ordinateur).
+              Mon objectif est d'aider les entreprises à digitaliser leurs processus, optimiser leurs flux logistiques et transformer leurs données brutes en outils décisionnels intuitifs et performants.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Design Responsive 100%</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Tableaux de Bord & SaaS</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Data & Business Analytics</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Optimisation Flux & Logistique</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
                 <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Sites Vitrines & E-Commerce</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Optimisation SEO & Vitesse</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <CheckCircle size={18} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>Intégration UI/UX Soignée</span>
               </div>
             </div>
           </motion.div>
@@ -121,13 +128,13 @@ const AboutPage = () => {
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>15+</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Sites Web Créés
+                Projets & Dashboards
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>100%</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Design Responsive
+                Optimisation des Flux
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
@@ -139,7 +146,7 @@ const AboutPage = () => {
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>10+</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Projets Livrés
+                Solutions SaaS & Web
               </p>
             </div>
           </motion.div>
@@ -149,7 +156,7 @@ const AboutPage = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="section-header" style={{ marginBottom: '2.5rem' }}>
             <span className="subtitle">Compétences</span>
-            <h2>Compétences Web</h2>
+            <h2>Domaines d'Expertise</h2>
           </div>
 
           <div
@@ -163,19 +170,19 @@ const AboutPage = () => {
           >
             <div>
               <h4 style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--accent-primary)', fontWeight: 700 }}>
-                Intégration & Design Front-End
+                Développement Web, SaaS & Dashboards
               </h4>
-              {skills.slice(0, 4).map((skill, idx) => (
+              {skills.slice(0, 5).map((skill, idx) => (
                 <SkillBar key={idx} skill={skill} index={idx} />
               ))}
             </div>
 
             <div>
               <h4 style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'var(--accent-secondary)', fontWeight: 700 }}>
-                CMS, SEO & Développement Web
+                Data Analysis, Génie Industriel & Logistique
               </h4>
-              {skills.slice(4).map((skill, idx) => (
-                <SkillBar key={idx} skill={skill} index={idx + 4} />
+              {skills.slice(5).map((skill, idx) => (
+                <SkillBar key={idx} skill={skill} index={idx + 5} />
               ))}
             </div>
           </div>

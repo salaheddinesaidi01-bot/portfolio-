@@ -99,24 +99,24 @@ const HomePage = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <Layout size={28} style={{ color: 'var(--accent-primary)' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Sites Vitrines</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Design Responsive & Sur-mesure</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Applications Web & SaaS</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Solutions Sur-mesure & E-Commerce</p>
               </div>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <ShoppingBag size={28} style={{ color: 'var(--accent-secondary)' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Sites E-Commerce</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Catalogues & Ventes en ligne</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Tableaux de Bord (Dashboards)</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Visualisation & Aide à la Décision</p>
               </div>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <Search size={28} style={{ color: '#10b981' }} />
               <div>
-                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Optimisation SEO</h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Référencement & Vitesse Web</p>
+                <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Génie Industriel & Data</h4>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Optimisation des Flux & Logistique</p>
               </div>
             </div>
           </div>

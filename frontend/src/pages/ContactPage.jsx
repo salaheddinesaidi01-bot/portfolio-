@@ -116,7 +116,14 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h4 style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Email</h4>
-                  <p style={{ fontWeight: 600, fontSize: '1rem' }}>contact@alexandre.dev</p>
+                  <a
+                    href="mailto:salaheddinesaidi01@gmail.com"
+                    style={{ fontWeight: 600, fontSize: '1rem', color: 'var(--text-primary)', textDecoration: 'none' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent-primary)')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
+                  >
+                    salaheddinesaidi01@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -138,7 +145,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h4 style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Localisation</h4>
-                  <p style={{ fontWeight: 600, fontSize: '1rem' }}>Paris / Full Remote</p>
+                  <p style={{ fontWeight: 600, fontSize: '1rem' }}>Tlemcen / Algérie</p>
                 </div>
               </div>
 
@@ -160,7 +167,14 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h4 style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Téléphone</h4>
-                  <p style={{ fontWeight: 600, fontSize: '1rem' }}>+33 6 12 34 56 78</p>
+                  <a
+                    href="tel:+213561219466"
+                    style={{ fontWeight: 600, fontSize: '1rem', color: 'var(--text-primary)', textDecoration: 'none' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent-primary)')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
+                  >
+                    +213 561219466
+                  </a>
                 </div>
               </div>
             </div>
@@ -169,7 +183,7 @@ const ContactPage = () => {
             <h4 style={{ fontSize: '1.1rem', marginBottom: '1rem', fontWeight: 700 }}>Réseaux Sociaux</h4>
             <div style={{ display: 'flex', gap: '1rem' }}>
               <a
-                href="https://github.com"
+                href="https://github.com/salaheddinesaidi01-bot/portfolio-"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card"
@@ -185,7 +199,7 @@ const ContactPage = () => {
                 <Github size={18} /> GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/saidi-salah-eddine/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card"
@@ -275,7 +289,7 @@ const ContactPage = () => {
                       name="nom"
                       value={formData.nom}
                       onChange={handleChange}
-                      placeholder="Jean Dupont"
+                      placeholder="Votre nom complet"
                       required
                       style={{
                         width: '100%',
@@ -302,7 +316,7 @@ const ContactPage = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="jean.dupont@example.com"
+                      placeholder="votre.email@example.com"
                       required
                       style={{
                         width: '100%',
@@ -329,7 +343,7 @@ const ContactPage = () => {
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Bonjour Alexandre, nous aimerions échanger sur un projet..."
+                      placeholder="Bonjour Salah Eddine, nous aimerions échanger sur un projet..."
                       required
                       style={{
                         width: '100%',
