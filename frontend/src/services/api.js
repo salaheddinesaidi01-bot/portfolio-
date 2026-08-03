@@ -13,10 +13,10 @@ const api = axios.create({
 const fallbackProjects = [
   {
     id: 1,
-    titre: "Boutique de Vêtements E-Commerce",
-    description: "Site e-commerce moderne et responsive pour boutique de vêtements et prêt-à-porter. Interface interactive avec catalogue produits, filtres dynamiques, panier d'achat et paiement sécurisé.",
+    titre: "KOUNOUZ - Boutique E-Commerce & Prêt-à-Porter",
+    description: "Plateforme e-commerce haut de gamme pour la marque 'KOUNOUZ - Luxe & Prêt-à-Porter'. Interface élégante et moderne avec univers Homme, Femme, Enfant, catalogue dynamique, filtres et expérience d'achat fluide.",
     image_url: "/assets/project_ecommerce.png",
-    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Mode & Vêtements"],
+    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Mode & Luxe"],
     lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   },
