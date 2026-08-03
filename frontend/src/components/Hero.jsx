@@ -115,7 +115,7 @@ const Hero = () => {
               gap: '0.5rem'
             }}
           >
-            <Globe size={22} /> Développeur Web (Creation & Integration de Sites Web)
+            <Globe size={22} /> Développeur Web (Création & Intégration de Sites Web)
           </h2>
 
           <p
@@ -149,7 +149,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Right Column - User Profile Photo */}
+        {/* Right Column - User Profile Photo (Without Experience Badge) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -203,30 +203,6 @@ const Hero = () => {
                 }}
               />
             </div>
-
-            {/* Experience Floating Badge: 2 Ans */}
-            <motion.div
-              animate={{ y: [0, -8, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-              className="glass-card"
-              style={{
-                position: 'absolute',
-                bottom: '-15px',
-                left: '-20px',
-                padding: '0.75rem 1.2rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.75rem',
-                borderRadius: 'var(--radius-md)'
-              }}
-            >
-              <span style={{ fontSize: '1.8rem', fontWeight: 800 }} className="text-gradient">
-                2
-              </span>
-              <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', lineHeight: 1.2 }}>
-                Ans d'expérience <br /> Développeur Web
-              </span>
-            </motion.div>
           </div>
         </motion.div>
       </div>

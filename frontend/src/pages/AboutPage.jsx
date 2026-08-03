@@ -18,22 +18,16 @@ const webDeveloperSkills = [
 
 const webDeveloperTimeline = [
   {
-    year: "2024 - Présent",
+    year: "Récents",
     title: "Développeur Web Freelance & Studio",
     company: "Création de Sites Web Sur-Mesure",
     description: "Conception et développement de sites vitrines modernes, boutiques e-commerce performantes et landing pages optimisées pour la conversion et le référencement naturel (SEO)."
   },
   {
-    year: "2022 - 2024",
+    year: "Projets",
     title: "Développeur Web & Intégrateur",
     company: "Digital Web Agency",
     description: "Intégration responsive de maquettes web, création d'interfaces dynamiques, développement de thèmes personnalisés et maintenance de sites web."
-  },
-  {
-    year: "2020 - 2022",
-    title: "Formation en Développement Web & Informatique",
-    company: "Institut de Technologie Web",
-    description: "Acquisition des compétences fondamentales en intégration web, programmation client/serveur et gestion de projets web."
   }
 ];
 
@@ -89,7 +83,7 @@ const AboutPage = () => {
               Des sites web sur-mesure, élégants et performants
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.2rem' }}>
-              Avec <strong>2 ans d'expérience</strong> dans le développement web, je crée des <strong>sites web professionnels</strong> (sites vitrines, e-commerce, portfolios, landing pages) conçus pour captiver vos visiteurs et booster votre présence en ligne.
+              En tant que <strong>Développeur Web passionné</strong>, je crée des <strong>sites web professionnels</strong> (sites vitrines, e-commerce, portfolios, landing pages) conçus pour captiver vos visiteurs et booster votre présence en ligne.
             </p>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '1.8rem' }}>
               Je privilégie une approche moderne axée sur le design responsive, la rapidité de chargement et l'optimisation SEO afin d'offrir une expérience utilisateur irréprochable sur tous les écrans (mobile, tablette, ordinateur).
@@ -125,12 +119,6 @@ const AboutPage = () => {
             style={{ padding: '2.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}
           >
             <div style={{ textAlign: 'center' }}>
-              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>2</span>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Ans d'Expérience
-              </p>
-            </div>
-            <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>15+</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
                 Sites Web Créés
@@ -139,13 +127,19 @@ const AboutPage = () => {
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>100%</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Sites Responsive & Fluid
+                Design Responsive
+              </p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>100%</span>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
+                Satisfaction Client
               </p>
             </div>
             <div style={{ textAlign: 'center' }}>
               <span className="text-gradient" style={{ fontSize: '3rem', fontWeight: 800, lineHeight: 1 }}>10+</span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600 }}>
-                Projets Clients Livrés
+                Projets Livrés
               </p>
             </div>
           </motion.div>

@@ -1,18 +1,18 @@
 export const initialProjects = [
   {
     id: 1,
-    titre: "Site E-Commerce Boutique & Mode",
-    description: "Boutique en ligne moderne et 100% responsive avec catalogue produits, gestion du panier, paiement sécurisé et optimisation des temps de chargement sur mobile.",
+    titre: "Plateforme E-Commerce & Clinique Vétérinaire",
+    description: "Application web et boutique e-commerce pour produits et services de santé animale. Interface moderne avec catalogue d'articles, recherche interactive, panier d'achat et design responsive.",
     image_url: "/assets/project_ecommerce.png",
-    technologies: ["HTML5/CSS3", "JavaScript", "PHP", "WordPress / WooCommerce", "Design Responsive"],
-    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Web App"],
+    lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2026-01-15")
   },
   {
     id: 2,
     titre: "Site Vitrine Agence Digital & Business",
-    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration Google Maps.",
+    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration cartographique.",
     image_url: "/assets/project_taskmanager.png",
     technologies: ["HTML5", "CSS3 / SASS", "JavaScript Modern", "Optimisation SEO", "UI/UX"],
     lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
@@ -35,7 +35,7 @@ export const initialAboutInfo = {
   id: 1,
   nom: "SAIDI SALAH EDDINE",
   titre: "Développeur Web",
-  presentation: "Passionné par la création de sites web modernes, responsive et performants. Avec 2 ans d'expérience dans le développement web (HTML, CSS, JavaScript, PHP, WordPress), je conçois des sites vitrines et e-commerce sur-mesure.",
+  presentation: "Passionné par la création de sites web modernes, responsive et performants. Je conçois des sites vitrines et e-commerce sur-mesure (HTML, CSS, JavaScript, PHP, WordPress).",
   parcours: "Développeur Web spécialisé dans l'intégration UI/UX et la réalisation de sites internet professionnels.",
   skills: [
     { category: "Frontend", name: "HTML5 / CSS3 / SASS", level: 95, icon: "Code2" },
@@ -47,13 +47,13 @@ export const initialAboutInfo = {
   ],
   timeline: [
     {
-      year: "2024 - Présent",
+      year: "Récents",
       title: "Développeur Web Freelance & Studio",
       company: "Création de Sites Web Sur-Mesure",
       description: "Conception et développement de sites vitrines modernes, boutiques e-commerce performantes et landing pages optimisées pour la conversion et le référencement naturel (SEO)."
     },
     {
-      year: "2022 - 2024",
+      year: "Projets",
       title: "Développeur Web & Intégrateur",
       company: "Digital Web Agency",
       description: "Intégration responsive de maquettes web, création d'interfaces dynamiques, développement de thèmes personnalisés et maintenance de sites web."

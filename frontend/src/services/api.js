@@ -13,17 +13,17 @@ const api = axios.create({
 const fallbackProjects = [
   {
     id: 1,
-    titre: "Site E-Commerce Boutique & Mode",
-    description: "Boutique en ligne moderne et 100% responsive avec catalogue produits, gestion du panier, paiement sécurisé et optimisation des temps de chargement sur mobile.",
+    titre: "Plateforme E-Commerce & Clinique Vétérinaire",
+    description: "Application web et boutique e-commerce pour produits et services de santé animale. Interface moderne avec catalogue d'articles, recherche interactive, panier d'achat et design responsive.",
     image_url: "/assets/project_ecommerce.png",
-    technologies: ["HTML5/CSS3", "JavaScript", "PHP", "WordPress / WooCommerce", "Design Responsive"],
-    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Web App"],
+    lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   },
   {
     id: 2,
     titre: "Site Vitrine Agence Digital & Business",
-    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration Google Maps.",
+    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration cartographique.",
     image_url: "/assets/project_taskmanager.png",
     technologies: ["HTML5", "CSS3 / SASS", "JavaScript Modern", "Optimisation SEO", "UI/UX"],
     lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
