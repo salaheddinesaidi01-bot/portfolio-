@@ -1,24 +1,25 @@
 import prisma from '../config/db.js';
 import { initialProjects } from '../data/mockData.js';
 
-let inMemoryProjects = [...initialProjects];
-
 export const getProjects = async (req, res) => {
   try {
     if (prisma) {
-      const dbProjects = await prisma.project.findMany({
-        orderBy: { date_creation: 'desc' }
-      });
-      if (dbProjects && dbProjects.length > 0) {
-        return res.status(200).json({ success: true, count: dbProjects.length, data: dbProjects });
+      try {
+        const dbProjects = await prisma.project.findMany({
+          orderBy: { date_creation: 'desc' }
+        });
+        if (dbProjects && dbProjects.length > 0) {
+          return res.status(200).json({ success: true, count: dbProjects.length, data: dbProjects });
+        }
+      } catch (dbError) {
+        console.warn('PostgreSQL not accessible, using mock projects data');
       }
     }
-    // Return in-memory fallback
-    return res.status(200).json({ success: true, count: inMemoryProjects.length, data: inMemoryProjects });
+    // Return latest mock data
+    return res.status(200).json({ success: true, count: initialProjects.length, data: initialProjects });
   } catch (error) {
     console.error('Error fetching projects:', error.message);
-    // Fallback to mock data on DB error
-    return res.status(200).json({ success: true, count: inMemoryProjects.length, data: inMemoryProjects, note: "Using memory fallback" });
+    return res.status(200).json({ success: true, count: initialProjects.length, data: initialProjects });
   }
 };
 
@@ -28,11 +29,13 @@ export const getProjectById = async (req, res) => {
     const projectId = parseInt(id, 10);
 
     if (prisma) {
-      const project = await prisma.project.findUnique({ where: { id: projectId } });
-      if (project) return res.status(200).json({ success: true, data: project });
+      try {
+        const project = await prisma.project.findUnique({ where: { id: projectId } });
+        if (project) return res.status(200).json({ success: true, data: project });
+      } catch (e) {}
     }
 
-    const memoryProject = inMemoryProjects.find(p => p.id === projectId);
+    const memoryProject = initialProjects.find(p => p.id === projectId);
     if (memoryProject) {
       return res.status(200).json({ success: true, data: memoryProject });
     }
