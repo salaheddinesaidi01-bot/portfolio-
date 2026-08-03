@@ -22,10 +22,10 @@ const fallbackProjects = [
   },
   {
     id: 2,
-    titre: "Site Vitrine Agence Digital & Business",
-    description: "Site vitrine sur-mesure pour entreprise avec présentations d'activités, animations modernes au scroll, formulaire de devis interactif et intégration cartographique.",
-    image_url: "/assets/project_taskmanager.png",
-    technologies: ["HTML5", "CSS3 / SASS", "JavaScript Modern", "Optimisation SEO", "UI/UX"],
+    titre: "Tableau de Bord & Dashboard Décisionnel d'Entreprise",
+    description: "Application web d'aide à la décision et de pilotage d'entreprise. Génération automatique de rapports (Direction, Commercial), suivi du chiffre d'affaires, gestion de la flotte logistique, livreurs et seuil de rentabilité.",
+    image_url: "/assets/project_dashboard.png",
+    technologies: ["HTML5/CSS3", "JavaScript", "Aide à la Décision", "Rapports Automatiques", "Dashboard Analytics"],
     lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-"
   },
