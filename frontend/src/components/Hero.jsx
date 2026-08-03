@@ -106,7 +106,7 @@ const Hero = () => {
 
           <h2
             style={{
-              fontSize: '1.35rem',
+              fontSize: '1.25rem',
               color: 'var(--accent-secondary)',
               fontWeight: 600,
               marginBottom: '1.5rem',
@@ -115,21 +115,19 @@ const Hero = () => {
               gap: '0.5rem'
             }}
           >
-            <Globe size={22} /> Développeur Web (Création & Intégration de Sites Web)
+            <Globe size={22} /> Développeur Web & SaaS | Data Analyst | Ingénieur Génie Industriel
           </h2>
 
           <p
             style={{
-              fontSize: '1.1rem',
+              fontSize: '1.05rem',
               color: 'var(--text-secondary)',
-              maxWidth: '560px',
+              maxWidth: '600px',
               marginBottom: '2.5rem',
               lineHeight: 1.7
             }}
           >
-            Spécialiste de la création de sites web modernes, responsive et sur-mesure. 
-            J'accompagne mes clients dans la conception de leurs sites vitrines, e-commerce et landing pages 
-            à fort impact visuel et parfaitement optimisés.
+            Spécialisé dans la conception de tableaux de bord (dashboards), applications web & SaaS, sites e-commerce et l'optimisation des flux logistiques.
           </p>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>

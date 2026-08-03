@@ -24,9 +24,9 @@ const Footer = () => {
       >
         <div style={{ display: 'flex', gap: '1.2rem' }}>
           {[
-            { icon: Github, href: 'https://github.com/salaheddinesaidi01-bot', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-            { icon: Mail, href: 'mailto:contact@saidisalaheddine.dev', label: 'Email' }
+            { icon: Github, href: 'https://github.com/salaheddinesaidi01-bot/portfolio-', label: 'GitHub' },
+            { icon: Linkedin, href: 'https://www.linkedin.com/in/saidi-salah-eddine/', label: 'LinkedIn' },
+            { icon: Mail, href: 'mailto:salaheddinesaidi01@gmail.com', label: 'Email' }
           ].map((social, idx) => (
             <motion.a
               key={idx}
