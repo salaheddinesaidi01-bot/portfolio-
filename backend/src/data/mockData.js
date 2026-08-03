@@ -1,10 +1,10 @@
 export const initialProjects = [
   {
     id: 1,
-    titre: "Plateforme E-Commerce & Clinique Vétérinaire",
-    description: "Application web et boutique e-commerce pour produits et services de santé animale. Interface moderne avec catalogue d'articles, recherche interactive, panier d'achat et design responsive.",
+    titre: "Plateforme E-Commerce & Boutique de Vêtements",
+    description: "Site e-commerce moderne et responsive pour boutique de vêtements et prêt-à-porter. Interface interactive avec catalogue produits, filtres dynamique, panier d'achat et paiement sécurisé.",
     image_url: "/assets/project_ecommerce.png",
-    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Web App"],
+    technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Mode & Vêtements"],
     lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2026-01-15")
