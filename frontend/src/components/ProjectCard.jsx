@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, ArrowUpRight, Maximize2, ChevronLeft, ChevronRight, X, Image as ImageIcon } from 'lucide-react';
+import { Github, Maximize2, ChevronLeft, ChevronRight, X, Image as ImageIcon } from 'lucide-react';
 
 const ProjectCard = ({ project, index }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -280,24 +280,27 @@ const ProjectCard = ({ project, index }) => {
               </a>
             )}
 
-            {project.lien_projet && (
-              <a
-                href={project.lien_projet}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.3rem',
-                  fontSize: '0.88rem',
-                  fontWeight: 700,
-                  color: 'var(--accent-primary)',
-                  transition: 'gap var(--transition-fast)'
-                }}
-              >
-                Voir la Démo <ArrowUpRight size={16} />
-              </a>
-            )}
+            <button
+              onClick={() => setIsModalOpen(true)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                fontSize: '0.88rem',
+                fontWeight: 600,
+                color: 'var(--accent-primary)',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 0,
+                transition: 'opacity var(--transition-fast)'
+              }}
+              title="Agrandir et voir les captures d'écran"
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.8')}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
+            >
+              <Maximize2 size={15} /> Voir les captures
+            </button>
           </div>
         </div>
       </motion.div>

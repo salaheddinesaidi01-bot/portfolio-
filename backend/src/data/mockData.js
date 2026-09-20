@@ -1,32 +1,53 @@
 export const initialProjects = [
   {
     id: 1,
+    titre: "Toufiltex Tlemcen — Importateur & Vente de Fils Textiles",
+    description: "Site vitrine sur-mesure pour Toufiltex (Tlemcen), entreprise spécialisée dans l'importation directe d'usine et la distribution de fils textiles et de confection en Algérie. Design soigné avec concept visuel de fil conducteur, catalogue d'échantillons interactif (Fils Industriels, Fibres de Précision, Fils de Confection) et module de bon de commande / demande de devis.",
+    image_url: "/assets/toufiltex_hero.png",
+    images: [
+      "/assets/toufiltex_hero.png",
+      "/assets/toufiltex_catalog.png",
+      "/assets/toufiltex_devis.png",
+      "/assets/toufiltex_full.png"
+    ],
+    technologies: [
+      "React.js",
+      "Site Vitrine B2B",
+      "Textile & Confection",
+      "Échantillonneur Produits",
+      "Bon de Commande & Devis",
+      "Design Sur-Mesure"
+    ],
+    lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
+    date_creation: new Date("2026-03-01")
+  },
+  {
+    id: 2,
     titre: "DZ TECH STORE — Magasin & Catalogue E-Commerce High-Tech",
     description: "Plateforme Web e-commerce et vitrine haut de gamme spécialisée dans la vente d'équipements High-Tech (Smartphones neufs sous emballage, téléphones Caba certifiés, et PC portables Gamer / Pro). Interface moderne avec bannières promotionnelles, sélection par gamme et livraison sécurisée 58 Wilayas.",
     image_url: "/assets/dztechstore_hero.png",
     images: ["/assets/dztechstore_hero.png", "/assets/dztechstore_catalog.png"],
     technologies: ["React.js", "Node.js / Express", "Catalogue High-Tech", "E-Commerce", "Livraison 58 Wilayas", "Design Premium"],
-    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2026-02-01")
   },
   {
-    id: 2,
+    id: 3,
     titre: "Site web pour boutique de vêtements destiné au e-commerce",
     description: "Site web e-commerce moderne et responsive pour boutique de vêtements et prêt-à-porter (KOUNOUZ). Interface élégante avec univers Homme, Femme, Enfant, catalogue dynamique, filtres et expérience d'achat fluide.",
     image_url: "/assets/project_ecommerce.png",
+    images: ["/assets/project_ecommerce.png"],
     technologies: ["HTML5/CSS3", "JavaScript", "E-Commerce", "Design Responsive", "Mode & Vêtements"],
-    lien_projet: "https://f5db1c4k-5174.euw.devtunnels.ms/",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2026-01-15")
   },
   {
-    id: 3,
+    id: 4,
     titre: "Tableau de Bord & Dashboard Décisionnel d'Entreprise",
     description: "Application web d'aide à la décision et de pilotage d'entreprise. Génération automatique de rapports (Direction, Commercial), suivi du chiffre d'affaires, gestion de la flotte logistique, livreurs et seuil de rentabilité.",
     image_url: "/assets/project_dashboard.png",
+    images: ["/assets/project_dashboard.png"],
     technologies: ["HTML5/CSS3", "JavaScript", "Aide à la Décision", "Rapports Automatiques", "Dashboard Analytics"],
-    lien_projet: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     lien_code: "https://github.com/salaheddinesaidi01-bot/portfolio-",
     date_creation: new Date("2025-11-20")
   }
